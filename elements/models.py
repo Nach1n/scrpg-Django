@@ -7,7 +7,7 @@ class Page(models.Model):
        return self.title
 
 class Imgs(models.Model):
-    imgs = models.FileField(upload_to='minuta/', blank=True, null=True)
+    imgs = models.FileField(upload_to='images/', blank=True, null=True)
 
     def __str__(self):
         return str(self.imgs)
